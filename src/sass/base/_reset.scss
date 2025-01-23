@@ -1,9 +1,19 @@
+// _reset.scss file
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(24, 230, 68);
-    margin: 0;
-    padding: 0;
-  }
-  h2{
-    color: #FFFFFF;
-  }
+  font-family: Arial, sans-serif;
+  background: url('/src/img/bg.webp'), #171717;
+  margin: 0;
+  padding: 0;
+}
