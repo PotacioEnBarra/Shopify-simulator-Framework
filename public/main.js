@@ -15,7 +15,7 @@
   \********************/
 /***/ (() => {
 
-eval("console.log('Gradiweb is online!!!');\n\n\n//# sourceURL=webpack://shopify-simulator/./src/app.js?");
+eval("// import './styles.css';\r\nconsole.log('Gradiweb is online!!!');\r\n\n\n//# sourceURL=webpack://shopify-simulator/./src/app.js?");
 
 /***/ })
 
