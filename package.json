@@ -19,6 +19,7 @@
     "liquidjs": "^10.20.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.11.0",
     "sass": "^1.62.0",
     "sass-loader": "^13.3.3",

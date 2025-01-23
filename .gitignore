@@ -94,3 +94,5 @@ dist
 .webpack/
 
 .svelte-kit
+
+public/assets/
