@@ -9,3 +9,12 @@
         transform: translateX(calc(-25.8rem * 2));
     }
 }
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-25.8rem * 2));
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

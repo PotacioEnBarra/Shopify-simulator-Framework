@@ -1,0 +1,12 @@
+<main class="main-content" id="main-content">
+  <div class="main-content__container">
+    <img src="/assets/hero_banner_img.avif" width="100%" height="100%" alt="image-banner">
+    <div class="main-content__btn">
+      <a href="{{ settings['hero-banner'].settings.button_link }}" class="btn__primary">
+        {{- settings['hero-banner'].settings.button_text | upcase -}}
+      </a>
+    </div>
+  </div>
+</main>
+
+{% render 'marquee', marquee_text: settings['hero-banner'].settings.marquee_text %}

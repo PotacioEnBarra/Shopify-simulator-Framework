@@ -1,5 +1,6 @@
 // Importamos los estilos reset para la pagina
 @use 'base/reset' as *;
-@use 'base/typography' as *;
-@use 'base/variables' as *;
-@use 'components/top-bar' as *;
+@use 'pages/top-bar' as *;
+@use 'pages/main' as *;
+@use 'components/buttons' as *;
+@use 'components/marquee' as *;

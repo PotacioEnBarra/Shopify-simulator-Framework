@@ -17,3 +17,49 @@ body {
   margin: 0;
   padding: 0;
 }
+
+// ESTILOS PARA SCROLLBAR
+
+::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra de desplazamiento */
+  height: 4px; /* Altura de la barra de desplazamiento horizontal (si la usas) */
+}
+
+/* Personaliza el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #171717; /* Fondo de la pista del scroll */
+}
+
+/* Personaliza el "thumb" (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF; /* Color de la parte que se mueve */
+  border-radius: 10px; /* Bordes redondeados para el "thumb" */
+  border: 2px solid #FFFFFF; /* Borde alrededor del "thumb" */
+}
+
+/* Cambiar el color del "thumb" cuando el usuario interactúa */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFFFFF; /* Color de fondo al pasar el ratón sobre la barra */
+}
+
+/* Para el scrollbar horizontal */
+::-webkit-scrollbar-horizontal {
+  height: 4px; /* Altura de la barra horizontal */
+}
+
+/* Personaliza el track (fondo) del scrollbar horizontal */
+::-webkit-scrollbar-track-horizontal {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Personaliza el "thumb" del scrollbar horizontal */
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+/* Cambiar el color al pasar el ratón sobre la barra horizontal */
+::-webkit-scrollbar-thumb-horizontal:hover {
+  background-color: #FFFFFF;
+}

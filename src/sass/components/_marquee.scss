@@ -1,12 +1,17 @@
-// _top-bar scss file
+// _marquee scss file
 
 @use '../base/typography' as *;
 @use '../base/variables' as *;
 @use '../base/keyframes' as *;
 
-.top-bar {
+.marquee {
     overflow-x: hidden;
     background: $primary-color;
+    margin: 2rem 0 0;
+
+    @media (min-width: 992px) {
+        margin: 4rem 0 0;
+    }
 
     &__container {
         width: 100%;
@@ -18,7 +23,7 @@
 
         &--animation {
             min-width: fit-content;
-            animation: scroll-left 10s linear infinite;
+            animation: scroll-right 10s linear infinite;
             display: flex;
             align-items: center;
             gap: .8rem;
@@ -39,7 +44,7 @@
     &__text {
         font-family: $font-aeonik-bold;
         color: $white;
-        font-size: $font-size-mb-dk-12;
+        font-size: $font-size-mb-12;
         height: 1.8rem;
         display: flex;
         align-items: center;

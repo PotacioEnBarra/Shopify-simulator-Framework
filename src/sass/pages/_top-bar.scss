@@ -1,0 +1,48 @@
+// _top-bar scss file
+
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+@use '../base/keyframes' as *;
+
+.top-bar {
+    overflow-x: hidden;
+    background: $primary-color;
+
+    &__container {
+        width: 100%;
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+        mask-image: linear-gradient(to right, transparent 0%, white 5%, white 95%, transparent 100%);
+
+
+        &--animation {
+            min-width: fit-content;
+            animation: scroll-left 10s linear infinite;
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &__component {
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+        transition: all .3s;
+    }
+
+    &__text {
+        font-family: $font-aeonik-bold;
+        color: $white;
+        font-size: $font-size-mb-12;
+        height: 1.8rem;
+        display: flex;
+        align-items: center;
+        width: 22.5rem;
+    }
+}
