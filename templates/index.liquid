@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify Simulator | Gradiweb</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    {% comment %} TOP BAR TEMPLATE {% endcomment %}
-    {% include 'top-bar.liquid' %}
+    <header class="header">
+      {% comment %} TOP BAR TEMPLATE {% endcomment %}
+      {% include 'top-bar.liquid' %}
 
+      <!-- Cabecera principal -->
+      {% include 'layouts/header.liquid' %}
+    </header>
     {% comment %} MAIN TEMPLATE {% endcomment %}
     {% include 'main.liquid' %}
 
