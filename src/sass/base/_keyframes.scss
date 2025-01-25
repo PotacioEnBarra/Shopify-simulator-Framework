@@ -9,6 +9,27 @@
         transform: translateX(calc(-25.8rem * 2));
     }
 }
+
+@keyframes scroll-left-marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50.4rem * 2));
+    }
+}
+
+@keyframes scroll-left-marquee-dk {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-74.2rem * 2));
+    }
+}
+
 @keyframes scroll-right {
     0% {
         transform: translateX(calc(-25.8rem * 2));
@@ -18,6 +39,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes appear {
     from {
         opacity: 0;

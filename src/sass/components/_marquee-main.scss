@@ -1,0 +1,64 @@
+// _marquee scss file
+
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+@use '../base/keyframes' as *;
+
+.marquee-main {
+    overflow-x: hidden;
+    background: transparent;
+    margin: 3.7rem 0 4.3rem;
+
+    @media (min-width: 992px) {
+        margin: 4rem 0 0;
+    }
+
+    &__container {
+        width: 100%;
+        height: 7.7rem;
+        display: flex;
+        align-items: center;
+        mask-image: linear-gradient(to right, transparent 0%, white 5%, white 95%, transparent 100%);
+
+        &--animation {
+            min-width: fit-content;
+            animation: scroll-left-marquee 10s linear infinite;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            @media (min-width: 992px) {
+                gap: 2rem;
+                animation: scroll-left-marquee-dk 10s linear infinite;
+            }
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &__component {
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+        transition: all .3s;
+    }
+
+    &__text {
+        font-family: $font-countach-bold;
+        color: $white;
+        font-size: $font-size-mb-55;
+        height: 7.7rem;
+        display: flex;
+        align-items: center;
+        width: 39rem;
+        margin: 0 0 0 1.5rem;
+
+        @media (min-width: 992px) {
+            font-size: $font-size-dk-88;
+            width: 61.8rem;
+            margin: 0 0 0 2rem;
+        }
+    }
+}
