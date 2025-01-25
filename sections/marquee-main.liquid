@@ -1,0 +1,12 @@
+<section class="marquee-main">
+  <div class="marquee-main__container">
+    <div class="marquee-main__container--animation">
+      {% for i in (1..10) %}
+        <div class="marquee-main__component">
+          {% render 'icons/icon-diamond' %}
+          <p class="marquee-main__text">SHUFFLE ESSENTIALS</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
