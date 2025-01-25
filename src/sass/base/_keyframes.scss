@@ -9,3 +9,39 @@
         transform: translateX(calc(-25.8rem * 2));
     }
 }
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-25.8rem * 2));
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes vanish {
+    from {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        transform: translateY(50%);
+
+    }
+}

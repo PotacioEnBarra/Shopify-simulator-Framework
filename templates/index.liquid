@@ -1,15 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopify Simulator | Gradiweb</title>
-</head>
-<body>
-  {% comment %} TOP BAR TEMPLATE {% endcomment %}
-  {% include 'top-bar.liquid' %}
-  
-  {% include 'featured-products.liquid' %}
-  <script src="/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Simulator | Gradiweb</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header">
+      {% comment %} TOP BAR TEMPLATE {% endcomment %}
+      {% include 'top-bar.liquid' %}
+
+      <!-- Cabecera principal -->
+      {% include 'layouts/header.liquid' %}
+    </header>
+    {% comment %} MAIN TEMPLATE {% endcomment %}
+    {% include 'main.liquid' %}
+
+    {% include 'featured-products.liquid' %}
+    <script src="/main.js"></script>
+  </body>
 </html>
