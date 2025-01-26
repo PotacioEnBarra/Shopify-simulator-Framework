@@ -1,0 +1,197 @@
+// _footer scss file
+
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+@use '../base/keyframes' as *;
+
+
+.footer {
+    &__container {
+        padding: 0 2rem 2rem;
+
+        @media (min-width: 992px) {
+            padding: 0 4rem 4rem;
+            max-width: 136.6rem;
+            margin: 0 auto;
+        }
+
+        &--type-01 {
+            width: 100%;
+            height: 56.1rem;
+            border-radius: .5rem;
+            overflow: hidden;
+
+            @media (min-width: 992px) {
+                height: 47.3rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        &--type-02 {
+            margin: 4rem 0 0;
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &--type-03 {
+            @media (min-width: 992px) {
+                order: 2;
+            }
+        }
+
+        &--type-04 {
+            display: flex;
+            flex-direction: column;
+            gap: 3.6rem;
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+                justify-content: center;
+
+            }
+        }
+
+        &--type-05 {
+            margin: 4rem 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+                justify-content: center;
+                gap: 4.8rem;
+
+            }
+        }
+
+        &--type-06 {
+            margin: 6rem 0 0;
+            display: flex;
+            gap: .8rem;
+            align-items: center;
+
+            @media (min-width: 992px) {
+                justify-content: center;
+            }
+        }
+
+        &--type-07 {
+            display: flex;
+            gap: .8rem;
+        }
+
+        &--type-08 {
+            margin: 4rem 0 0;
+
+            @media (min-width: 992px) {
+                order: 3;
+                margin: 0;
+                max-width: 21.5rem;
+            }
+        }
+
+        &--type-09 {
+            margin: 4rem 0 0;
+
+            @media (min-width: 992px) {
+                order: 1;
+                max-width: 18.6rem;
+                margin: 0;
+            }
+        }
+
+        &--type-10 {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+        }
+
+        &--type-11 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        &--type-12 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--type-13 {
+            display: none;
+
+            @media (min-width: 992px) {
+                display: flex;
+                gap: 1rem;
+                margin: 5.6rem 0 0;
+            }
+        }
+    }
+
+    &__text {
+        &--type-01 {
+            font-family: $font-aeonik;
+            font-size: $font-size-mb-12;
+            color: $white;
+        }
+
+        &--type-02 {
+            font-family: $font-aeonik;
+            font-size: $font-size-mb-16;
+            color: $primary-color;
+        }
+
+        &--type-03 {
+            font-family: $font-countach-bold;
+            font-size: $font-size-mb-34;
+            color: $white;
+        }
+
+        &--type-04 {
+            margin: 3.5rem 0 0;
+            font-family: $font-aeonik;
+            font-size: $font-size-mb-12;
+            color: $white;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 28.6rem;
+        height: 4rem;
+        margin: 1.4rem 0 0;
+        border-radius: .5rem;
+        background: #232128;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 .2rem 0 1rem;
+
+        &--type-01 {
+            font-family: $font-aeonik;
+            font-size: $font-size-mb-16;
+            color: $white;
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 100%;
+            padding: 0 1rem 0 0;
+        }
+    }
+}
