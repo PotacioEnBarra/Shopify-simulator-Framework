@@ -22,14 +22,14 @@
 
         &--animation {
             min-width: fit-content;
-            animation: scroll-left-marquee 10s linear infinite;
+            animation: scroll-left-marquee 30s linear infinite;
             display: flex;
             align-items: center;
             gap: 1.5rem;
 
             @media (min-width: 992px) {
                 gap: 2rem;
-                animation: scroll-left-marquee-dk 10s linear infinite;
+                animation: scroll-left-marquee-dk 30s linear infinite;
             }
 
             &:hover {

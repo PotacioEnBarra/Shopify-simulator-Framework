@@ -1,0 +1,30 @@
+<section class="latest-collection">
+  <div class="latest-collection__container">
+    <div class="latest-collection__container--type-01">
+      {% render 'icons/icon-diamond-2' %}
+      <p class="latest-collection__text--type-01">LATEST COLLECTION</p>
+      {% render 'icons/icon-diamond-2' %}
+    </div>
+
+    <div class="latest-collection__container--type-02">
+      {% for data in collections %}
+        {% assign reference_date = '2025-01-01' | date: '%s' %}
+        {% assign collection_date = data.created_at | date: '%s' %}
+        {% if collection_date >= reference_date %}
+          <div class="latest-collection__card">
+            <img
+              src="assets/{{ data.image }}"
+              alt="{{ data.title }}"
+              class="latest-collection__img"
+              width="100%"
+              height="100%"
+            >
+              <p class="latest-collection__text--type-02">
+                {{ data.title }}
+              </p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
