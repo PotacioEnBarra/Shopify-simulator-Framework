@@ -5,12 +5,12 @@
 @use '../base/keyframes' as *;
 
 .marquee-main {
-    overflow-x: hidden;
+    overflow: hidden;
     background: transparent;
     margin: 3.7rem 0 4.3rem;
 
     @media (min-width: 992px) {
-        margin: 4rem 0 0;
+        margin: 4rem 0;
     }
 
     &__container {
