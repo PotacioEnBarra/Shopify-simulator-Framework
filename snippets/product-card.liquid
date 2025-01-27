@@ -1,11 +1,25 @@
-<div class="product-card">
-  <h3>{{ product.title }}</h3>
-  <p>Price: ${{ product.price }}</p>
-  {% if product.tags %}
-    <ul>
-      {% for tag in product.tags %}
-        <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-</div>
+<a class="products__card--link" href="/products/{{ product.id }}">
+  <div class="products__card wow animate__animated animate__fadeInUp" data-wow-duration="0.8s">
+    <div class="products__card--img">
+      <img src="assets/{{ product.image }}" alt="{{ product.title }}" width="100%" height="100%">
+    </div>
+    <div class="products__container--type-02">
+      <div class="products__container--type-03">
+        <p class="products__text--type-01">
+          {{ product.title }}
+        </p>
+        <p class="products__text--type-01">${{ product.price }} USD</p>
+        <div class="products__tags">
+          {% for i in product.tags %}
+            <p class="products__text--type-02">{{ i }}</p>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="products__container--type-04">
+        <button class="products__button--type-01">
+          {% render 'icons/icon-market' %}
+        </button>
+      </div>
+    </div>
+  </div>
+</a>

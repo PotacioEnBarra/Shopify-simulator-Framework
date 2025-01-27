@@ -1,64 +1,120 @@
 <footer class="footer">
   <div class="footer__container">
+    <!-- Contenedor Principal del Footer -->
     <div class="footer__container--type-01">
+      <!-- Banner inferior -->
       <img
         src="/assets/homepage_bottom_banner.avif"
         alt="Gradiweb footer"
         width="100%"
         height="100%"
+        class="wow animate__animated animate__fadeInUp"
+        data-wow-duration="0.4s"
       >
     </div>
     <div class="footer__container--type-02">
+      <!-- Sección de enlaces primarios del footer -->
       <div class="footer__container--type-03">
         <div class="footer__container--type-04">
           {% for data in settings.footer.settings.links limit: 4 %}
-            <a href="{{ data.url }}" class="btn__link--footer-primary">{{ data.label | upcase }}</a>
+            <a
+              href="{{ data.url }}"
+              class="btn__link--footer-primary wow animate__animated animate__fadeInUp"
+              data-wow-duration="0.4s"
+            >
+              {{- data.label | upcase -}}
+            </a>
           {% endfor %}
         </div>
+        <!-- Sección de enlaces secundarios del footer -->
         <div class="footer__container--type-05">
           {% for data in settings.footer.settings.links offset: 4 %}
-            <a href="{{ data.url }}" class="btn__link--footer-secondary">{{ data.label | upcase }}</a>
+            <a
+              href="{{ data.url }}"
+              class="btn__link--footer-secondary wow animate__animated animate__fadeInUp"
+              data-wow-duration="0.8s"
+            >
+              {{- data.label | upcase -}}
+            </a>
           {% endfor %}
         </div>
+        <!-- Información de pago aceptado -->
         <div class="footer__container--type-06">
-          <p class="footer__text--type-01">We accept all major cards, PayPal & crypto</p>
+          <p class="footer__text--type-01 wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+            We accept all major cards, PayPal & crypto
+          </p>
           <div class="footer__container--type-07">
-            {% render 'icons/icon-bitcoin' %}
-            {% render 'icons/icon-ethereum' %}
-            {% render 'icons/icon-litecoin' %}
-            {% render 'icons/icon-dashcoin' %}
-            {% render 'icons/icon-dollar' %}
+            <!-- Iconos de métodos de pago -->
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+              {% render 'icons/icon-bitcoin' %}
+            </div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">
+              {% render 'icons/icon-ethereum' %}
+            </div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">
+              {% render 'icons/icon-litecoin' %}
+            </div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.7s">
+              {% render 'icons/icon-dashcoin' %}
+            </div>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s">
+              {% render 'icons/icon-dollar' %}
+            </div>
           </div>
         </div>
       </div>
+      <!-- Sección de suscripción -->
       <div class="footer__container--type-08">
-        <p class="footer__text--type-01">Subscribe and receive drop notifications</p>
+        <p class="footer__text--type-01 wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+          Subscribe and receive drop notifications
+        </p>
         <div class="footer__input">
-          <input type="text" class="footer__input--type-01" placeholder="Enter Email">
+          <!-- Campo de ingreso de correo electrónico -->
+          <input
+            type="text"
+            class="footer__input--type-01 wow animate__animated animate__fadeInUp"
+            data-wow-duration="0.6s"
+            placeholder="Enter Email"
+          >
           <button class="btn__submit">
             {% render 'icons/icon-arrow-right' %}
           </button>
         </div>
+        <!-- Enlaces a redes sociales -->
         <div class="footer__container--type-13">
-          <a class="btn__link--footer-secondary">FACEBOOK</a>
-          <a class="btn__link--footer-secondary">X(TWITTER)</a>
-          <a class="btn__link--footer-secondary">INSTAGRAM</a>
+          <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.5s"
+            >FACEBOOK</a
+          >
+          <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"
+            >X(TWITTER)</a
+          >
+          <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.7s"
+            >INSTAGRAM</a
+          >
         </div>
       </div>
       <div class="footer__container--type-09">
         <div class="footer__container--type-12">
-          <div class="footer__container--type-10">
+          <div class="footer__container--type-10 wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">
             {% render 'icons/icon-logo-footer' %}
             <p class="footer__text--type-02">|</p>
             <p class="footer__text--type-03">{{ settings.footer.settings.logo_text }}</p>
           </div>
+          <!-- Enlaces a redes sociales -->
           <div class="footer__container--type-11">
-            <a class="btn__link--footer-secondary">FACEBOOK</a>
-            <a class="btn__link--footer-secondary">X(TWITTER)</a>
-            <a class="btn__link--footer-secondary">INSTAGRAM</a>
+            <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.5s"
+              >FACEBOOK</a
+            >
+            <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"
+              >X(TWITTER)</a
+            >
+            <a class="btn__link--footer-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.7s"
+              >INSTAGRAM</a
+            >
           </div>
         </div>
-        <p class="footer__text--type-04">
+        <!-- Información de derechos de autor y contacto -->
+        <p class="footer__text--type-04 wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">
           © 2024, Shuffle.store Operated by Studio Plaid. Need help?<br>
           Email support@shuffle.store
         </p>
