@@ -126,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\nconsole.log('Gradiweb is online!!!');\r\n\r\nnew WOW().init();\n\n//# sourceURL=webpack://shopify-simulator/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\nconsole.log('Gradiweb is online!!!');\r\n\r\ndocument.addEventListener('DOMContentLoaded', function () {\r\n    new WOW().init();\r\n    window.scrollTo(0, 0);\r\n});\n\n//# sourceURL=webpack://shopify-simulator/./src/app.js?");
 
 /***/ }),
 

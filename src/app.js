@@ -1,4 +1,7 @@
 import './styles.css';
 console.log('Gradiweb is online!!!');
 
-new WOW().init();
+document.addEventListener('DOMContentLoaded', function () {
+    new WOW().init();
+    window.scrollTo(0, 0);
+});
