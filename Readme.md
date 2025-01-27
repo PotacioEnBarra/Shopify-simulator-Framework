@@ -1,3 +1,15 @@
+---
+
+## **Proyect**
+
+This project used several useful libraries for web development. 😎
+
+- `Swiper`: The Most Modern Mobile Touch Slider.
+- `Animate`: Animate.css is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.
+- `Wow.js`: Reveal Animations When You Scroll.
+
+---
+
 # Shopify Simulator Documentation
 
 Welcome to **Shopify Simulator**, a lightweight environment designed to help developers explore Shopify's Liquid templating language and dynamic section-based architecture. This project simulates Shopify's core functionalities, enabling developers to practice creating reusable components, iterating through data, and working with dynamic settings.
