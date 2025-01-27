@@ -77,6 +77,46 @@
         }
     }
 
+    &__tertiary {
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 15.1rem;
+        height: 7.4rem;
+        background: $primary-color;
+        border-radius: .5rem;
+        @include basic-a-btn;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-family: $font-countach-bold;
+        font-size: $font-size-mb-24;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 $white;
+        -webkit-transition: ease-out 0.35s;
+        -moz-transition: ease-out 0.35s;
+        transition: ease-out 0.35s;
+        border: .2rem solid $primary-color;
+        white-space: normal;
+        /* Permitir que el texto haga wrap (salto de línea) */
+        word-wrap: break-word;
+        /* Asegura que las palabras largas se ajusten */
+        overflow-wrap: break-word;
+        /* Deja que las palabras largas se dividan */
+        overflow: hidden;
+        /* Ocultar el contenido que se desborda */
+
+        &:hover {
+            box-shadow: inset 0 100px 0 0 $white;
+            color: $primary-color;
+        }
+
+        @media (min-width: 992px) {
+            font-size: $font-size-dk-32;
+
+        }
+    }
+
     &__market {
         width: 4.2rem;
         height: 4.2rem;
