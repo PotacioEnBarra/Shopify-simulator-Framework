@@ -1,40 +1,42 @@
 <header class="header__content">
   <div class="header__container">
     <div class="header__container--type-01">
-      <button class="btn__menu" id="btn__menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="15" fill="none">
-          <path stroke="#762CFB" stroke-width="3" d="M0 1.5h36M0 13.5h36"></path>
-        </svg>
+      <!-- Botón de menú, con animación de entrada -->
+      <button class="btn__menu wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" id="btn__menu">
+        {% render 'icons/icon-menu' %}
       </button>
-
+      <!-- Contenedor de la sección de logo y texto del sitio -->
       <div class="header__btn--type-01">
+        <!-- Enlace con el logo y nombre de la tienda -->
         <a href="#" class="btn__secondary">
-          <div class="header__svg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 95 80" fill="none">
-              <path fill="#6B38F1" d="M60.417 0H19.576C14.348 0 9.426 2.105 5.732 5.909 2.038 9.719 0 14.779 0 20.16v6.175c0 8.224 5.023 15.43 13.441 19.283l3.36 1.418v-20.4a2.355 2.355 0 0 1-.02-.308v-6.175c0-1.046.518-1.727.825-2.042.307-.316.968-.85 1.976-.85h40.842a2.72 2.72 0 0 1 1.983.85c.308.315.818.996.818 2.035v13.55H80V20.154c0-5.383-2.038-10.45-5.732-14.252C70.56 2.098 65.645 0 60.418 0ZM66.49 49.345 63.2 47.956v20.54c.013.049.013.105.013.154v6.175a2.895 2.895 0 0 1-.825 2.05c-.306.315-.968.849-1.977.849H19.576c-1.54 0-2.795-1.299-2.795-2.877V61.296H0v13.55C0 85.963 8.78 95 19.576 95h40.841c5.228-.007 10.15-2.105 13.844-5.909 3.694-3.81 5.732-8.876 5.732-14.259v-6.175c0-8.301-5.044-15.522-13.503-19.304v-.008Z"></path><path fill="#6B38F1" d="M39.996 68.6s-1.35-7.641-7.21-13.676v.007a26.622 26.622 0 0 0-2.366-2.14C25.097 48.552 19.487 47.5 19.487 47.5s7.423-1.39 13.291-7.425a25.873 25.873 0 0 0 2.972-3.698c3.374-5.073 4.24-9.992 4.24-9.992s1.356 7.649 7.218 13.683c.77.793 1.567 1.495 2.365 2.134 5.323 4.238 10.926 5.29 10.926 5.29s-7.423 1.397-13.285 7.432a25.842 25.842 0 0 0-2.965 3.698c-3.373 5.06-4.253 9.979-4.253 9.979Z"></path>
-            </svg>
+          <div class="header__svg wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">
+            {% render 'icons/icon-logo-header' %}
           </div>
-          <p class="btn__secondary text-secondary">SHUFFLE</p>
-          <p class="btn__secondary separator">|</p>
-          <p class="btn__secondary text">STORE</p>
+          <p class="btn__secondary text-secondary wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">
+            SHUFFLE
+          </p>
+          <!-- Separador visual entre nombre y sección -->
+          <p class="btn__secondary separator wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">|</p>
+          <p class="btn__secondary text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">STORE</p>
         </a>
       </div>
     </div>
-    <!-- Cabecera principal -->
+    <!-- Inclusión de componente de monedas disponibles -->
     {% include 'components/coins' %}
 
     <div class="header__container--type-02">
       <div class="header__container--type-04">
-        <a href="" class="btn__link">All Products</a>
-        <a href="" class="btn__link">Collections</a>
+        <!-- Enlaces de navegación (productos y colecciones) -->
+        <a href="" class="btn__link wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">All Products</a>
+        <a href="" class="btn__link wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">Collections</a>
       </div>
-      <button class="btn__market">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.167 2.167h1.415c.266 0 .4 0 .507.049a.542.542 0 0 1 .23.2c.064.099.083.23.12.495L4.953 6.5m0 0 1.14 8.376c.145 1.063.217 1.594.47 1.994.225.352.546.633.925.807.43.198.967.198 2.04.198h9.27c1.022 0 1.533 0 1.95-.184.368-.162.683-.423.911-.754.259-.376.354-.877.545-1.88l1.434-7.528c.068-.353.101-.53.052-.668a.542.542 0 0 0-.238-.287c-.126-.074-.306-.074-.665-.074H4.952Zm5.881 16.25a1.083 1.083 0 1 1-2.166 0 1.083 1.083 0 0 1 2.166 0Zm8.667 0a1.083 1.083 0 1 1-2.167 0 1.083 1.083 0 0 1 2.167 0Z"></path>
-        </svg>
+      <!-- Botón de acceso al mercado, con icono animado -->
+      <button class="btn__market wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">
+        {% render 'icons/icon-market-header' %}
       </button>
     </div>
   </div>
 </header>
 
+<!-- Inclusión de menú móvil (visible solo en dispositivos móviles) -->
 {% include 'components/menu-mb' %}
